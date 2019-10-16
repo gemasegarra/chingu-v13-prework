@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    height: 64px;   
+}
+
+.header-bar {
+    font-size: 22px;
+    color: rgba(0,0,0,.6);
+    border-color: rgba(0,0,0,.14);
+    fill: rgba(0,0,0,.6);
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.font {
+    font-weight: normal;
+}
+
+links {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: right;
+    float: right;
+}
+
+a:link {
+    color: rgba(0,0,0,.6);
+    fill: rgba(0,0,0,.6);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  
+  a:visited {
+    color: rgba(0,0,0,.6);
+    fill: rgba(0,0,0,.6);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+
+#current-link{
+    color: #ff5252;
+}
+  
+hr {
+    width: 100%;
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    padding: 0;
+    }

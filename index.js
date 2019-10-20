@@ -18,9 +18,7 @@ function search() {
     let filter = input.value.toUpperCase();
     let ul = document.getElementById("fonts");
     li = ul.getElementsByTagName('li');
-  
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
+      for (i = 0; i < li.length; i++) {
       let font = li[i].getElementsByClassName("font")[0];
       let author = li[i].getElementsByClassName("author")[0];
       let fontText = font.textContent || font.innerText;
@@ -34,19 +32,27 @@ function search() {
   }
 
 
-/* Type input */
 
-const typeSomething = document.forms['text-input']
-typeSomething.addEventListener('keyup', e => {
+
+/* Type input */
+const defaultText = document.getElementById('text').innerHTML;
+
+function typeSomething(e) {
+const typeSomething = document.forms['text-input'];
     e.preventDefault();
-    const value = typeSomething.querySelector('input[type="text"]').value;
+    let value = typeSomething.querySelector('input[type="text"]').value;
     console.log(value);
+    
     let inputs = document.getElementsByClassName('text-i');
     Array.from(inputs).forEach(function(i){
-        i.innerHTML = value;
-    })
-
-})
+        i.innerHTML = value;   
+      
+        if (value == "") {
+          i.innerHTML = defaultText;
+        }
+    }) 
+};
+  
 
 /*Font size*/
 
@@ -64,7 +70,8 @@ window.onload = function(){
 
 /*Refresh page button*/
 
+const defaultPage = document.body.innerHTML;
+
 function refreshPage(){
-    console.info("Reload")
-    window.location.reload(false);
+    document.body.innerHTML = defaultPage;
 };

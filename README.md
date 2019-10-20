@@ -21,7 +21,7 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 - [x] Nav with Major navigation / page-manipulation *(search, custom text, font-size, dark/light mode, grid/list mode, and reset)*
 - [x] Main section to contain the font cards
 - [x] Font cards which display the Font Name, the font creator, the sample text, and an add button
-- [ ] Footer section with your developer information
+- [x] Footer section with your developer information
 
 *Style*
 - [x] Sample text in each card should be displayed in the corresponding font
@@ -30,9 +30,9 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 
 *Functionality*
 - [x] Text typed into the custom text (type something) box should immediately change the sample text displayed in each font card
-- [ ] The sample text should return to the default sample if the input box (type something) no longer has any input *(ex. input == "")*
+- [x] The sample text should return to the default sample if the input box (type something) no longer has any input *(ex. input == "")*
 - [ ] Font size chooser should have at least four sizes and should immediately change the sample text font size in each font card
-- [ ] Implement the clickable 'reset' icon on the far right of the major navigation; it should make the page appear as if the user reloaded the page *(do not actually reload the page)*
+- [x] Implement the clickable 'reset' icon on the far right of the major navigation; it should make the page appear as if the user reloaded the page *(do not actually reload the page)*
 
 **Extras (Not Required)**
 

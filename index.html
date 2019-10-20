@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="main.css"/>
     <script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
     <title>Favorite Fonts</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   </head>
 
   <body>
     <header class="header">
       <section class="header-bar">Google <span class="font">Fonts</span>
         <div class="links">
-          <a id="current-link" href="#">Catalog</a>
-          <a href="https://github.com/chingu-voyages/voyage-prework-tier1-favfonts">Featured</a>
-          <a href="https://github.com/chingu-voyages/voyage-prework-tier1-favfonts">Articles</a>
-          <a href="https://github.com/chingu-voyages/voyage-prework-tier1-favfonts">About</a>
+          <span id="current">Catalog</span>
+          <span>Featured</span>
+          <span>Articles</span>
+          <span id="last">About<span/>
         </div>
       </section>
     </header>
@@ -31,10 +34,10 @@
       <div class="form">
         <form id="search">
           <i class="fa fa-search" id="search-g"></i>
-          <input type="search" id="search-font" onkeyup="search()"placeholder="Search font"></form>
+          <input type="search" id="search-font" onkeyup="search()" placeholder="Search font"></form>
         <div class="vertical-line"></div>
         <form id="text-input">
-          <input type="text" id="text-input" name="sentence"placeholder="Type something">
+          <input type="text" id="text-input" onkeyup="typeSomething(event)" name="sentence"placeholder="Type something">
         </form>
         <div class="vertical-line"></div>
                 <div class="arr"></div>
@@ -44,7 +47,7 @@
                     <option value="30px">30px</option>
                     <option value="32px">32px</option>
                     <option value="40px">40px</option>
-                </select></form>
+                </select>
                 <button type="submit" class="grid-change" id="grid"><i class="fas fa-bars fa-lg"></i></button>
                 <button type="submit" class="reload-button" onClick="refreshPage()"><i class="fas fa-redo fa-lg"></i></button></div>
       </div>
@@ -114,7 +117,7 @@
     </main>
 
     <footer> 
-      <h4>bla</h4>
+      <h5>Coded by <a href="https://github.com/gemasegarra">Gema S.</a> | 2019 | Chingu Prework Project V13</h5>
     </footer>
     <script src="index.js"></script>
   </body>

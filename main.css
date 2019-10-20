@@ -3,10 +3,11 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 .header {
-  background: white;
-  font-family: "Roboto", sans-serif;
   height: 64px;
 }
 
@@ -72,20 +73,11 @@ hr {
   margin-left: 60px;
   margin-right: 55px;
   height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-
-
-#navform {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  color: #000;
-  font-weight: 400;
-  margin-left: 20px;
+.inputs {
   flex: 1;
+  
 }
 
 .vertical-line{
@@ -103,7 +95,6 @@ hr {
 
 input[type="search"] {
   -webkit-appearance: none;
-  font-family: 'Roboto', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   margin-left: 10px !important;
@@ -113,10 +104,13 @@ input[type="search"] {
 }
 
 input[type="text"] {
-    padding: 0px 100px 0px 0px;
-    border: none;
-}
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 0px 100px 0px 0px;
+  border: none;
+  display: inline-block;
 
+}
 
 .select{      
 	border: 0;
@@ -128,6 +122,8 @@ input[type="text"] {
 	-o-appearance: none;
   appearance: none;
   cursor: pointer;
+  font-size: 15px;
+
 }
 
 .font-size {
@@ -140,12 +136,10 @@ input[type="text"] {
   position: absolute; right: 0; top: 0;
 }
 
-
 .grid-change {
   cursor: pointer;
   border: none;
   margin-left: 30px;
- 
 }
 
 .reload-button {
@@ -153,9 +147,73 @@ input[type="text"] {
   border: none;
   margin-left: 30px;
 }
+ */
 
+
+.inputs{
+  margin-left: 100px;
+  margin-top: 30px;
+
+}
 
 /*-----*/
 
+ul#fonts {
+margin-top: 30px;
+padding: 50px;
+list-style-type: none;
+}
+
+.fonts li{
+  display: inline-block;
+  padding: 20px;
+
+}
 
 
+.font-name {
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+}
+
+.author {
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+color: rgba(0,0,0,.6);
+}
+
+.text-i{
+  font-size: 20px;
+}
+
+#text2 {
+  font-family: 'Gayathri', sans-serif;
+}
+
+#text3 {
+  font-family: 'Chilanka', cursive;
+
+}
+
+#text4 {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#text5{
+  font-family: 'Lato', sans-serif;
+}
+
+#text6{
+  font-family: 'Manjari', sans-serif;
+}
+
+#text7{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#text8{
+  font-family: 'Roboto Condensed', sans-serif;
+}

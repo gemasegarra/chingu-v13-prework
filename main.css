@@ -115,17 +115,18 @@ input[type="text"] {
 }
 
 
+
 .grid-change {
   cursor: pointer;
   border: none;
   margin-left: 30px;
+
 }
 
 .reload-button {
   cursor: pointer;
   border: none;
   margin-left: 30px;
-
 }
 
 
@@ -218,4 +219,11 @@ h5 {
 a, a:visited {
   text-decoration: none;
   color: rgba(0,0,0,.6);
+}
+
+.fa-plus-circle{
+  color: #ff5252;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
 }

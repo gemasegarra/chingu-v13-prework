@@ -22,7 +22,7 @@ body {
   margin-right: 2%;
 }
 
-.font {
+.fonts {
   font-weight: normal;
 }
 
@@ -54,7 +54,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgb(110, 8, 8);
+  border-top: 1px solid #ccc;
   padding: 0;
 }
 
@@ -63,21 +63,22 @@ hr {
   border-style: solid;
   border-width: 1px;
   border-color: #ccc;
-  padding: 10px;
   width: 90%;
   border-radius: 48px;
-  margin: 2%;
-  float: left
+  margin-top: 2%;
+  margin: 2% auto;
 }
 
+form {
+  display: inline;
+}
 
 .vertical-line{
     border-left: 1px solid #ccc;
-    height: 24px;
-    width: 6px;
     top: 90px;
     bottom: 0px;
     left: 50%;
+    display: inline;
 }
 
 #search-g {
@@ -87,11 +88,9 @@ hr {
 input[type="search"] {
   -webkit-appearance: none;
   font-size: 15px !important;
-  font-weight: 400 !important;
   margin-left: 10px !important;
   padding: 0px 100px 0px 0px;
   border: none;
-  display: inline;
 }
 
 input[type="text"] {
@@ -99,7 +98,6 @@ input[type="text"] {
   margin-left: 10px;
   padding: 0px 100px 0px 0px;
   border: none;
-  display: inline;
 }
 
 .select{      
@@ -113,7 +111,6 @@ input[type="text"] {
   appearance: none;
   cursor: pointer;
   font-size: 15px; 
-  display: inline;
 }
 
 
@@ -132,23 +129,30 @@ input[type="text"] {
 
 /*-----*/
 
-ul#fonts {
-margin-top: 30px;
-padding: 50px;
-list-style-type: none;
+.row {  
+  display: grid;  
+  grid-template-columns: repeat(4, auto);  
+  grid-template-rows: repeat(2, auto);  
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  margin: auto;
+  width: 88%;
+  padding: 10px;
 }
 
-.fonts li{
-  display: inline-block;
-  padding: 20px;
-
+.font-line {
+  width: 95%;
+  margin-bottom: 10px;
+  border-top: 1px solid;
+  padding: auto;
 }
 
-
-.font-name {
+.font {
 font-size: 14px;
 font-weight: 500;
 line-height: 20px;
+
 }
 
 .author {
@@ -156,10 +160,15 @@ font-size: 14px;
 font-weight: 500;
 line-height: 20px;
 color: rgba(0,0,0,.6);
+margin-top: 2%
 }
 
 .text-i{
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: auto;
+  overflow: hidden;
 }
 
 #text2 {

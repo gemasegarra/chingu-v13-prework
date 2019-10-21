@@ -18,7 +18,7 @@
 
   <body>
     <header class="header">
-      <section class="header-bar">Google <span class="fonts">Fonts</span>
+      <section class="header-bar">Google <span class="fonts-t">Fonts</span>
         <div class="links">
           <span id="current">Catalog</span>
           <span>Featured</span>
@@ -30,7 +30,7 @@
 
     <hr>
     
-    <section class="nav-bar">
+    <div class="nav-bar">
         <form id="search">
           <i class="fa fa-search" id="search-g"></i>
           <input type="search" id="search-font" onkeyup="search()" placeholder="Search font">
@@ -52,11 +52,12 @@
           <option value="30px">30px</option>
           <option value="35px">35px</option>
           <option value="40px">40px</option>
+          <option value="100px">100px</option>
         </select>
 
         <button type="submit" class="grid-change" id="grid"><i class="fas fa-bars fa-lg"></i></button>
         <button type="submit" class="reload-button" onClick="refreshPage()"><i class="fas fa-redo fa-lg"></i></button>
-      
+      </div>
     </section>
 
     <main>

@@ -1,3 +1,4 @@
+  
 * {
   margin: 0;
   padding: 0;
@@ -124,15 +125,19 @@ input[type="text"] {
   cursor: pointer;
   border: none;
   margin-left: 30px;
+
 }
 
 
 /*-----*/
 
+
+
 .row {  
   display: grid;  
   grid-template-columns: repeat(4, auto);  
   grid-template-rows: repeat(2, auto);  
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
@@ -168,7 +173,7 @@ margin-top: 2%
   margin-top: 20px;
   margin-bottom: 30px;
   max-width: auto;
-  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 #text2 {

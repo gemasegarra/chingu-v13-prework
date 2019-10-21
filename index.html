@@ -31,26 +31,29 @@
     <hr>
     
     <section class="nav-bar">
-      <div class="form">
         <form id="search">
           <i class="fa fa-search" id="search-g"></i>
-          <input type="search" id="search-font" onkeyup="search()" placeholder="Search font"></form>
-        <div class="vertical-line"></div>
+          <input type="search" id="search-font" onkeyup="search()" placeholder="Search font">
+        </form>
+        
+        <div class="vertical-line"></div>    
+       
         <form id="text-input">
           <input type="text" id="text-input" onkeyup="typeSomething(event)" name="sentence"placeholder="Type something">
         </form>
-        <div class="vertical-line"></div>
-                <div class="arr"></div>
-                    <form id="select"><span class="font-size"><select class="select" id="font-s">
-                    <option value="20px">20px</option>
-                    <option value="24px">24px</option>
+        <div class="vertical-line"></div></div>
+                   <select class="select" id="font-s" onchange="changeSize()">
+                    <option value="10px">10px</option>
+                    <option value="15px">15px</option>
+                    <option value="20px" selected="selected">20px</option>
+                    <option value="25px">25px</option>
                     <option value="30px">30px</option>
-                    <option value="32px">32px</option>
+                    <option value="35px">35px</option>
                     <option value="40px">40px</option>
                 </select>
                 <button type="submit" class="grid-change" id="grid"><i class="fas fa-bars fa-lg"></i></button>
                 <button type="submit" class="reload-button" onClick="refreshPage()"><i class="fas fa-redo fa-lg"></i></button></div>
-      </div>
+      </div></div>
     </section>
 
     <main>

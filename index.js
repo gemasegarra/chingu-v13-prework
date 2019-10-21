@@ -1,16 +1,3 @@
-/*links disabled*/
-
-let links = document.getElementsByClassName("links");
-window.onload = function(){
-    Array.from(links).forEach(function(link){
-        link.addEventListener("click", event => {
-            console.info("link disabled")
-            event.preventDefault()})
-        })
-    };
-
-  
-
 /* Search input*/
 
 function search() {
@@ -30,8 +17,6 @@ function search() {
       }
     }
   }
-
-
 
 
 /* Type input */
@@ -54,18 +39,19 @@ const typeSomething = document.forms['text-input'];
 };
   
 
-/*Font size*/
+/*Change font size*/
 
+function changeSize (){
+  let selectedSize = document.getElementById("font-s").value
+  let texts = document.getElementsByClassName('text-i');
+  Array.from(texts).forEach(function(i) {
+    i.style.fontSize = selectedSize;
+  })
+}
 
+/*Change color-theme light/dark mode*/
 
-/*Disable grid-button*/
-
-/* let button = document.getElementById("grid");
-window.onload = function(){
-    button.addEventListener("click", event => {
-        console.warn("Button disabled")
-        event.preventDefault();
-})}; */
+/*Grid-list button*/
 
 
 /*Refresh page button*/

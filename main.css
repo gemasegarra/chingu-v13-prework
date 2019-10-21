@@ -18,8 +18,8 @@ body {
   fill: rgba(0, 0, 0, 0.6);
   font-weight: 500;
   padding: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .font {
@@ -31,26 +31,22 @@ body {
   text-transform: uppercase;
   text-align: right;
   float: right;
-}
-
-a:link {
   color: rgba(0, 0, 0, 0.6);
   fill: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  margin-left: 30px;
   font-weight: 500;
+  cursor: pointer;
 }
 
-a:visited {
-  color: rgba(0, 0, 0, 0.6);
-  fill: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: 500;
+span {
+  margin-right: 30px;
 }
 
-#current-link {
+#current{
   color: #ff5252;
+}
+
+#last {
+  margin-right: 0;
 }
 
 hr {
@@ -58,27 +54,22 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgb(110, 8, 8);
   padding: 0;
 }
 
- .form{
+ .nav-bar{
   background-color: transparent;
   border-style: solid;
   border-width: 1px;
   border-color: #ccc;
   padding: 10px;
+  width: 90%;
   border-radius: 48px;
-  margin-top: 10px;
-  margin-left: 60px;
-  margin-right: 55px;
-  height: 24px;
+  margin: 2%;
+  float: left
 }
 
-.inputs {
-  flex: 1;
-  
-}
 
 .vertical-line{
     border-left: 1px solid #ccc;
@@ -90,7 +81,7 @@ hr {
 }
 
 #search-g {
-  margin-left: 0px;
+  margin-left: 2%;
 }
 
 input[type="search"] {
@@ -100,7 +91,7 @@ input[type="search"] {
   margin-left: 10px !important;
   padding: 0px 100px 0px 0px;
   border: none;
-
+  display: inline;
 }
 
 input[type="text"] {
@@ -108,8 +99,7 @@ input[type="text"] {
   margin-left: 10px;
   padding: 0px 100px 0px 0px;
   border: none;
-  display: inline-block;
-
+  display: inline;
 }
 
 .select{      
@@ -122,19 +112,10 @@ input[type="text"] {
 	-o-appearance: none;
   appearance: none;
   cursor: pointer;
-  font-size: 15px;
-
+  font-size: 15px; 
+  display: inline;
 }
 
-.font-size {
-	position: relative;	
-}
-
-.font-size:after {
-	font-family: FontAwesome;
-  content: '\f107';
-  position: absolute; right: 0; top: 0;
-}
 
 .grid-change {
   cursor: pointer;
@@ -147,14 +128,7 @@ input[type="text"] {
   border: none;
   margin-left: 30px;
 }
- */
 
-
-.inputs{
-  margin-left: 100px;
-  margin-top: 30px;
-
-}
 
 /*-----*/
 
@@ -216,4 +190,18 @@ color: rgba(0,0,0,.6);
 
 #text8{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+h5 {
+  font-weight: normal;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  height: auto;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: rgba(0,0,0,.6);
 }

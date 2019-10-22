@@ -1,151 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no"/>
-    <meta name="description" content="Google fonts clone made for the pre-work session of Chingu Voyage 13"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="main.css"/>
-    <script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no'/>
+    <meta name='description' content='Google fonts clone made for the pre-work session of Chingu Voyage 13'/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans&display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap' rel='stylesheet'/>
+    <script src='https://kit.fontawesome.com/102a8e9465.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='main.css'/>
     <title>Favorite Fonts</title>
 
-    <link rel="shortcut icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel='shortcut icon' href='assets/favicon.ico'>
+    <link rel='apple-touch-icon' sizes='180x180' href='assets/apple-touch-icon.png'>
   </head>
 
   <body>
-    <header class="header">
-      <section class="header-bar">Google <span class="fonts-t">Fonts</span>
-        <div class="links">
-          <span id="current">Catalog</span>
+    <header class='header'>
+      <section class='header-bar'>Google <span class='fonts-t'>Fonts</span>
+        <div class='links'>
+          <span id='current'>Catalog</span>
           <span>Featured</span>
           <span>Articles</span>
-          <span id="last">About</span>
+          <span id='last'>About</span>
         </div>
       </section>
     </header>
 
     <hr>
     
-    <div class="nav-bar">
-        <form id="search">
-          <i class="fa fa-search" id="search-g"></i>
-          <input type="search" id="search-font" onkeyup="search()" placeholder="Search font">
+    <div class='nav-bar'>
+        <form id='search'>
+          <i class='fa fa-search' id='search-g'></i>
+          <input type='search' id='search-font' onkeyup='search()' placeholder='Search font'>
         </form>
         
-        <div class="vertical-line"></div>    
+        <div class='vertical-line'></div>    
        
-        <form id="text-input">
-          <input type="text" id="text-input" onkeyup="typeSomething(event)" name="sentence"placeholder="Type something">
+        <form id='text-input'>
+          <input type='text' id='text-input' onkeyup='typeSomething(event)' name='sentence'placeholder='Type something'>
         </form>
 
-        <div class="vertical-line"></div>
+        <div class='vertical-line'></div>
 
-        <select class="select" id="font-s" onchange="changeSize()">
-          <option value="10px">10px</option>
-          <option value="15px">15px</option>
-          <option value="20px" selected="selected">20px</option>
-          <option value="25px">25px</option>
-          <option value="30px">30px</option>
-          <option value="35px">35px</option>
-          <option value="40px">40px</option>
-          <option value="100px">100px</option>
+        <select class='select' id='font-s' onchange='changeSize()'>
+          <option value='10px'>10px</option>
+          <option value='15px'>15px</option>
+          <option value='20px' selected='selected'>20px</option>
+          <option value='25px'>25px</option>
+          <option value='30px'>30px</option>
+          <option value='35px'>35px</option>
+          <option value='40px'>40px</option>
+          <option value='100px'>100px</option>
         </select>
 
-        <button type="submit" class="grid-change" id="grid"><i class="fas fa-bars fa-lg"></i></button>
-        <button type="submit" class="reload-button" onClick="refreshPage()"><i class="fas fa-redo fa-lg"></i></button>
+        <label class="theme-switch" for="submit"> <button type='submit' class='color-mode' id="light-mode" onClick="lightTheme()"><i class="far fa-circle fa-lg"></i></button></label> 
+        <label class="theme-switch" for="submit"><button type='submit' class='color-mode' id="dark-mode" onClick="darkTheme()"><i class="fas fa-circle fa-lg"></i></button></label>
+        <label class="to-list" for="submit"><button type='submit' class='grid-change' id='grid' onClick="changeToList()"><i class='fas fa-list fa-lg'></i></button></label>
+        <label class="to-grid" for="submit"><button type='submit' class='list-change' id='list' onClick="list()"><i class='fas fa-border-all fa-lg'></i></button></label>
+        <button type='submit' class='reload-button' onClick='refreshPage()'><i class='fas fa-redo fa-lg'></i></button>
       </div>
     </section>
 
     <main>
-      <section class="fonts">
-      <div class='row'>
-          <div class="columm">
-            <hr class="font-line">
-            <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Roboto</h1>
-            <h2 class="author">Christian Robertson</h2>
-            <div class="text-i" id="text">
+      <ul id="fonts" class='row'>
+        
+          <li class='columm'>
+            <hr class='font-line'>
+            <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Roboto</h1>
+            <h2 class='author'>Christian Robertson</h2>
+            <div class='text-i' id='text'>
               I watched the storm, so beautiful yet terrific.
             </div>
-          </div>
+          </li>
+         
 
-          <div class="columm">
-              <hr class="font-line">
-              <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Gayathri</h1>
-            <h2 class="author">SMC</h2>
-            <div class="text-i" id="text2">
+          <li class='columm'>
+              <hr class='font-line'>
+              <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Gayathri</h1>
+            <h2 class='author'>SMC</h2>
+            <div class='text-i' id='text2'>
               I watched the storm, so beautiful yet terrific.
             </div>
-          </div>  
+          </li>  
 
-          <div class="columm">
-              <hr class="font-line">
-             <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Chilanka</h1>
-            <h2 class="author">SMC</h2>
-            <div class="text-i" id="text3">
+          <li class='columm'>
+              <hr class='font-line'>
+             <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Chilanka</h1>
+            <h2 class='author'>SMC</h2>
+            <div class='text-i' id='text3'>
               I watched the storm, so beautiful yet terrific.
             </div>
-          </div>  
+          </li>  
 
-          <div class="columm">
-          <hr class="font-line">
-          <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Open Sans</h1> 
-            <h2 class="author">Steve Mattenson</h2>
-            <div class="text-i" id="text4">I watched the storm, so beautiful yet terrific.
+          <li class='columm'>
+          <hr class='font-line'>
+          <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Open Sans</h1> 
+            <h2 class='author'>Steve Mattenson</h2>
+            <div class='text-i' id='text4'>I watched the storm, so beautiful yet terrific.
             </div>
-          </div>
+          </i>
   
-        <div class="columm">
-            <hr class="font-line">
-            <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Lato</h1>
-            <h2 class="author">Lukasz Dziedzic</h2>
-            <div class="text-i" id="text5">
+        <li class='columm'>
+            <hr class='font-line'>
+            <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Lato</h1>
+            <h2 class='author'>Lukasz Dziedzic</h2>
+            <div class='text-i' id='text5'>
               I watched the storm, so beautiful yet terrific.
             </div>
-          </div>
-            <div class="columm">
-                <hr class="font-line">
-                <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Manjari</h1>
-            <h2 class="author">Santhosh Thottingal</h2>
-            <div class="text-i" id="text6">
+          </li>
+            <li class='columm'>
+                <hr class='font-line'>
+                <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Manjari</h1>
+            <h2 class='author'>Santhosh Thottingal</h2>
+            <div class='text-i' id='text6'>
               I watched the storm, so beautiful yet terrific.
             </div>
-            </div>
-            <div class="columm">
-                <hr class="font-line">
-                <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Montserrat</h1>
-            <h2 class="author">Julieta Ulanovsky</h2>
-            <div class="text-i" id="text7">
+            </li>
+            <li class='columm'>
+                <hr class='font-line'>
+                <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Montserrat</h1>
+            <h2 class='author'>Julieta Ulanovsky</h2>
+            <div class='text-i' id='text7'>
               I watched the storm, so beautiful yet terrific.
             </div>
-            </div>
-            <div class="columm">
-                <hr class="font-line">
-                <i class="fas fa-plus-circle"></i>
-            <h1 class="font">Roboto Condensed</h1>
-            <h2 class="author">Christian Robertson</h2>
-            <div class="text-i" id="text8">
-              I watched the storm, so beautiful yet terrific.
-            </div>
-            </div>
-          </div> 
+            </li>
+            <li class='columm'>
 
-      </section>
+                <hr class='font-line'>
+                <i class='fas fa-plus-circle'></i>
+            <h1 class='font'>Roboto Condensed</h1>
+            <h2 class='author'>Christian Robertson</h2>
+            <div class='text-i' id='text8'>
+              I watched the storm, so beautiful yet terrific.
+            </div>
+          </li>
+
+          </ul> 
+
     </main>
 
     <footer> 
-      <h5>Coded by <a href="https://github.com/gemasegarra">Gema S.</a> | 2019 | Chingu Prework Project V13</h5>
+      <h5>Coded by <a href='https://github.com/gemasegarra'>Gema S.</a> | 2019 | Chingu Prework Project V13</h5>
     </footer>
-    <script src="index.js"></script>
+    <script src='index.js'></script>
   </body>
 </html>

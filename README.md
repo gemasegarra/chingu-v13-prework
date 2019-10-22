@@ -18,7 +18,7 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 
 *Structure*
 - [x] Header with minor navigation *(Logo and Catalog/Featured/Articles/About link list)*
-- [ ] Nav with Major navigation / page-manipulation *(~~search~~, ~~custom text~~, ~~font-size~~, dark/light mode, ~~grid/list mode~~, and ~~reset~~)*
+- [x] Nav with Major navigation / page-manipulation *(~~search~~, ~~custom text~~, ~~font-size~~, ~~dark/light mode~~, ~~grid/list mode~~, and ~~reset~~)*
 - [x] Main section to contain the font cards
 - [x] Font cards which display the Font Name, the font creator, the sample text, and an add button
 - [x] Footer section with your developer information
@@ -38,5 +38,5 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 
 - [ ] Include a back-to-top button that allows users to scroll to the top once the top of the page is out of view
 - [ ] Make your design fully responsive *(small/large/portrait/landscape, etc.)*
-- [ ] Implement the light/dark mode toggle buttons
+- [x] Implement the light/dark mode toggle buttons
 - [ ] Implement the change display icon so you can flip between a grid and list layout for the font cards

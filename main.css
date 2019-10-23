@@ -92,26 +92,28 @@ hr {
   border-radius: 48px;
   margin-top: 2%;
   margin: 2% auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 
 form {
-display:inline;
+  display:inline;
 
 }
 
 .vertical-line{
-    border-left: 1px solid var(--grey-bar);
-    top: 90px;
-    bottom: 0px;
-    left: 50%;
-    display: inline;
+  border-left: 1px solid var(--grey-bar);
+  top: 90px;
+  bottom: 0px;
+  left: 50%;
+  display: inline;
 }
 
 #search-g {
   margin-left: 2%;
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--grey);
 }
 
 input[type='search'] {
@@ -126,7 +128,7 @@ input[type='search'] {
 
 input[type='text'] {
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 2%;
   padding: 0px 100px 0px 0px;
   border: none;
   background: var(--bg-color);
@@ -134,8 +136,8 @@ input[type='text'] {
 }
 
 .select{      
-	border: 0;
-  padding: 12px;
+  border: 0;
+  padding-left: 12px;
   background: none;
   -webkit-appearance: none;
 	-moz-appearance: none;
@@ -150,7 +152,7 @@ input[type='text'] {
 .color-mode {
   cursor: pointer;
   border: none;
-  margin-left: 30px;
+  margin-left: 2%;
   background: var(--bg-color);
  }
 
@@ -166,7 +168,7 @@ input[type='text'] {
 .grid-change {
   cursor: pointer;
   border: none;
-  margin-left: 30px;
+  margin-left: 2%;
   background: var(--bg-color);
   color: var(--primary-color);
 }
@@ -174,16 +176,16 @@ input[type='text'] {
 .list-change {
   cursor: pointer;
   border: none;
-  margin-left: 30px;
+  margin-left: 2%;
   background: var(--bg-color);
   color: var(--primary-color);
 }
 .reload-button {
   cursor: pointer;
   border: none;
-  margin-left: 30px;
+  margin-left: 2%;
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--grey);
 }
 
 /* MAIN SECTION - font cards*/
@@ -334,4 +336,5 @@ a, a:visited {
   #text-input {
     display: none;
   }
+  
 }

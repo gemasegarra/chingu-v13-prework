@@ -1,3 +1,5 @@
+/* ---- */
+
 :root {
   --primary-color: black;
   --bg-color: #fff;
@@ -92,8 +94,10 @@ hr {
   margin: 2% auto;
 }
 
+
 form {
-  display: inline;
+display:inline;
+
 }
 
 .vertical-line{
@@ -111,7 +115,6 @@ form {
 }
 
 input[type='search'] {
-  
   -webkit-appearance: none;
   font-size: 15px !important;
   margin-left: 10px !important;
@@ -149,7 +152,7 @@ input[type='text'] {
   border: none;
   margin-left: 30px;
   background: var(--bg-color);
-}
+ }
 
 #light-mode {
   color: var(--primary-color);
@@ -181,12 +184,7 @@ input[type='text'] {
   margin-left: 30px;
   background: var(--bg-color);
   color: var(--primary-color);
-
 }
-
-
-[to-list="list"] {display: column;  
- }
 
 /* MAIN SECTION - font cards*/
 
@@ -195,8 +193,8 @@ input[type='text'] {
   grid-template-columns: repeat(4, auto);  
   grid-template-rows: repeat(2, auto);  
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px; /* Firefox */
+  -webkit-column-gap: 40px; 
+  -moz-column-gap: 40px; 
   column-gap: 40px;
   margin: auto;
   width: 88%;
@@ -211,18 +209,17 @@ input[type='text'] {
 }
 
 .font {
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .author {
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-color: var(--grey);
-margin-top: 2%
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--grey);
+  margin-top: 2%
 }
 
 .text-i{
@@ -275,6 +272,26 @@ ul#fonts li {
   display:inline;
 }
 
+/* ARROW SCROLL-UP BUTTON */
+
+#arrow-button {
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+  font-size: 20px; 
+  display: none; 
+  position: fixed; 
+  bottom: 70px; 
+  right: 15px; 
+  z-index: 99; 
+  background: var(--bg-color);
+  color: var(--primary-color);
+}
+
+#arrow-button:hover {
+  color: #ff5252; 
+}
+
 /* FOOTER */
 
 h5 {
@@ -291,3 +308,30 @@ a, a:visited {
   color: var(--grey);
 }
 
+
+/* MEDIA */
+
+@media (max-width: 1000px) {
+  .to-grid,
+  .select,
+  .fa-circle,
+  .to-list {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .vertical-line,
+  #text-input {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .vertical-line,
+  .reload-button,
+  #search-g,
+  #text-input {
+    display: none;
+  }
+}

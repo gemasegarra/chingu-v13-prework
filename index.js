@@ -16,8 +16,7 @@ function search() {
         li[i].style.display = 'none';
       }
     }
-  }
-
+  };
 
 /* Type input */
 const defaultText = document.getElementById('text').innerHTML;
@@ -47,24 +46,18 @@ function changeSize (){
   Array.from(texts).forEach(function(i) {
     i.style.fontSize = selectedSize;
   })
-}
+};
 
 /*Change color-theme light/dark mode*/
 
 
 function darkTheme() {
-    document.documentElement.setAttribute('data-theme', 'dark');
-      
-}
+    document.documentElement.setAttribute('data-theme', 'dark')   
+};
 
 function lightTheme() {
-  document.documentElement.setAttribute('data-theme', 'light');
-}
-
-
-
-/*Grid-list button*/
-
+  document.documentElement.setAttribute('data-theme', 'light')
+};
 
 /*Refresh page button*/
 
@@ -72,6 +65,24 @@ const defaultPage = document.body.innerHTML;
 
 function refreshPage(){
     document.body.innerHTML = defaultPage;
-    document.documentElement.setAttribute('data-theme', 'light');
-    
+    document.documentElement.setAttribute('data-theme', 'light')   
 };
+
+/*Scroll back to top button*/
+
+let arrowButton = document.getElementById('arrow-button');
+window.onscroll = function() {scrolling()};
+
+function scrolling() {
+  if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+    arrowButton.style.display = 'block';
+  } 
+  else {
+    arrowButton.style.display = 'none';
+  }
+};
+
+function goUp() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}

@@ -36,7 +36,7 @@ General instructions for all Pre-Work Projects can also be found in the Chingu V
 
 **Extras (Not Required)**
 
-- [ ] Include a back-to-top button that allows users to scroll to the top once the top of the page is out of view
+- [x] Include a back-to-top button that allows users to scroll to the top once the top of the page is out of view
 - [ ] Make your design fully responsive *(small/large/portrait/landscape, etc.)*
 - [x] Implement the light/dark mode toggle buttons
 - [ ] Implement the change display icon so you can flip between a grid and list layout for the font cards

@@ -21,10 +21,8 @@ function search() {
 /* Type input */
 const defaultText = document.getElementById('text').innerHTML;
 
-function typeSomething(e) {
-const typeSomething = document.forms['text-input'];
-    e.preventDefault();
-    let value = typeSomething.querySelector('input[type="text"]').value;
+function typeSomething() {
+    let value = document.querySelector('input[type="text"]').value;
     console.log(value);
     
     let inputs = document.getElementsByClassName('text-i');

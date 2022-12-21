@@ -84,3 +84,10 @@ function goUp() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
+/*Change to list*/
+const fontList = document.getElementById('fonts')
+const switcher = document.querySelector('.grid-change');
+    switcher.addEventListener('click', () => {
+       fontList.classList.toggle('grid');
+       fontList.classList.toggle('list');})    

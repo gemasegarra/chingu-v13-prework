@@ -190,7 +190,7 @@ input[type='text'] {
 
 /* MAIN SECTION - font cards*/
 
-.row {  
+.grid {  
   display: grid;  
   grid-template-columns: repeat(4, auto);  
   grid-template-rows: repeat(2, auto);  
@@ -201,6 +201,16 @@ input[type='text'] {
   margin: auto;
   width: 88%;
   padding: 10px;
+}
+
+.list {
+  display: grid;
+  grid-column: 1;
+  column-gap: 40px;
+  margin: auto;
+  width: 88%;
+  padding: 10px;
+  
 }
 
 .font-line {
